@@ -1,0 +1,4 @@
+﻿*.log
+*.log.old
+brave-autowipe.conf
+.DS_Store
