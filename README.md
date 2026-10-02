@@ -1,5 +1,21 @@
 ﻿# brave-autowipe
-
+> [!IMPORTANT]
+> **This project requires a rooted Android device with Magisk installed.**
+>
+> The script runs as a Magisk boot service in `/data/adb/service.d` and calls
+> `pm clear`, both of which need root access. It will not work on a stock,
+> unrooted device — there is no non-root workaround for this approach.
+>
+> **If your device is not rooted**, Brave already has a built-in option that
+> covers most use cases:
+> **Settings → Privacy → Clear browsing data on exit**.
+> It clears history, cookies, cache and site data on close, while keeping your
+> bookmarks and settings intact.
+>
+> Rooting voids most manufacturer warranties, may break banking and payment
+> apps, and carries a risk of bricking your device if done incorrectly. Do not
+> root a device solely to use this script.
+>
 Automatically clears all Brave browser data on Android when the app closes.
 
 A background service script for rooted devices. Watches the Brave process and
